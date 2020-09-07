@@ -7,8 +7,8 @@ pip install py-gmail
 ```
 ## py-gamil :
 Inorder to send mail form gmail using SMTP Server, first you need to enable "Two-Step Verification" on the sender mail id.
-
-[Google Account Help](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en&oco=0)
+```
+ [Google Account Help](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en&oco=0)
 
 1. Open your [Google Account](https://myaccount.google.com/) .
 
@@ -17,7 +17,7 @@ Inorder to send mail form gmail using SMTP Server, first you need to enable "Two
 3. Under “Signing in to Google,” select 2-Step Verification and then Get started.
 
 4. Set any "Account PIN". This pin will be the passowad of the sender mail is.
-
+```
 ## Requirement’s:
 ```
 • Python 
