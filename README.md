@@ -1,4 +1,4 @@
-## py-gmail
+## py-gamil :
 Automatically  Send Gmail with SMTP Server.
 
 ## Package Installation : 
@@ -18,6 +18,75 @@ Inorder to send mail form gmail using SMTP Server, first you need to enable "Two
 
 4. Set any "Account PIN". This pin will be the passowad of the sender mail is.
 ```
+How to use the module :
+----------------------
+
+## E-mail login credential :
+```
+gmail_id = ('') #sender g-mail id
+
+password = ('') #sender g-mail password
+```
+## Single Reciver mail id :
+```
+reciver_mail_id = [
+                    'reciver_mail_id_1@gmail.com'
+                    ]
+```
+
+## Multiple Reciver mail id's :
+```
+reciver_mail_id = [
+                    'reciver_mail_id_1@gmail.com',
+                    'reciver_mail_id_2@gmail.com',
+                    'reciver_mail_id_3@gmail.com',
+                    '............................',
+                    '.............................',
+                    'reciver_mail_id_N number@gmail.com',
+                    ]
+```
+
+## main subject :
+```
+subject = ('') #mail subject
+```
+## mail contain :
+```
+mail_contain = ('') #mail contain
+```
+## How to import the module :
+```
+from gmail.gmail import gmail
+```
+## create mail object :
+```
+mail = gmail()
+```
+## give sender login credential :
+```
+mail.login(gmail_id, password)
+```
+## give reciver mail id or id's. :
+```
+mail.reciver_mail(reciver)
+```
+## send mail :
+```
+mail.send_mail(subject, mail_contain)
+```
+## Example :
+```
+from gmail.gmail import gmail
+
+mail = gmail()
+
+mail.login(gmail_id, password)
+
+mail.reciver_mail(reciver)
+
+mail.send_mail(subject, mail_contain)
+```
+
 ## Requirement’s:
 ```
 • Python 
@@ -41,11 +110,10 @@ Inorder to send mail form gmail using SMTP Server, first you need to enable "Two
 How to install | Python | | Anaconda | | Opencv library |
  [![How to install | Python | | Anaconda | | Opencv library |](https://yt-embed.herokuapp.com/embed?v=eVV3byQlYvA)](https://www.youtube.com/watch?v=eVV3byQlYvA "How to install | Python | | Anaconda | | Opencv library |")
 
-
-## License:
+## License :
 MIT Licensed
 
-## Author:
+## Author :
 Sujit Mandal
 
 [GitHub](https://github.com/sujitmandal)
