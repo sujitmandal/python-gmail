@@ -1,4 +1,4 @@
-## py-gamil :
+## python-gamil :
 Automatically  Send Gmail with SMTP Server.
 
 ## Package Installation : 
@@ -6,7 +6,7 @@ Automatically  Send Gmail with SMTP Server.
 pip install python-gmail
 ```
 [Package Link](https://pypi.org/project/python-gmail/)
-## py-gamil :
+## python-gamil :
 Inorder to send mail form gmail using SMTP Server, first you need to enable "Two-Step Verification" on the sender mail id.
 
    [Google Account Help](https://support.google.com/accounts/answer/185839?co=GENIE.Platform%3DDesktop&hl=en&oco=0)
