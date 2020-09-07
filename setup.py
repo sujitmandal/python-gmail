@@ -9,8 +9,8 @@ def readme():
     return(README)
 
 setup(
-    name = 'py-gmail',
-    version = '0.0.5',
+    name = 'python-gmail',
+    version = '0.0.1',
     description = 'Automatically Send Gmail with SMTP Server.',
     long_description = readme(),
     long_description_content_type = 'text/markdown',
