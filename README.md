@@ -1,6 +1,8 @@
 ## python-gmail :
 Automatically  Send Gmail with SMTP Server.
 
+[![Downloads](https://pepy.tech/badge/python-gmail)](https://pepy.tech/project/python-gmail)
+
 ## Package Installation : 
 ```
 pip install python-gmail
