@@ -1,5 +1,5 @@
 ## python-gmail :
-[![Build Status](https://travis-ci.org/sujitmandal/python-gmail.svg?branch=master)](https://travis-ci.org/sujitmandal/python-gmail) [![GitHub license](https://img.shields.io/github/license/sujitmandal/python-gmail)](https://github.com/sujitmandal/python-gmail/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/sujitmandal/python-gmail.svg?branch=master)](https://travis-ci.org/sujitmandal/python-gmail) [![GitHub license](https://img.shields.io/github/license/sujitmandal/python-gmail)](https://github.com/sujitmandal/python-gmail/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-gmail) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/python-gmail)
 
 Automatically  Send Gmail with SMTP Server.
 
