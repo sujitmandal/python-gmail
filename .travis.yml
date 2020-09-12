@@ -6,3 +6,9 @@ python:
   -3.6
   -3.7
   -3.8
+
+before_script:
+  - composer install --no-interaction
+
+script:
+  - gmail/gmail.py
