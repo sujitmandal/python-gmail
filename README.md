@@ -1,4 +1,6 @@
 ## python-gmail :
+[![GitHub license](https://img.shields.io/github/license/sujitmandal/python-gmail)](https://github.com/sujitmandal/python-gmail/blob/master/LICENSE)
+
 Automatically  Send Gmail with SMTP Server.
 
 [![Downloads](https://pepy.tech/badge/python-gmail)](https://pepy.tech/project/python-gmail)
