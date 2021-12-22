@@ -11,27 +11,27 @@ LinkedIn : https://www.linkedin.com/in/sujit-mandal-91215013a/
 
 #E-mail login credential
 gmail_id = ('') #sender g-mail id
-password = ('') #sender g-mail password
+gmail_password = ('') #sender g-mail password
 
-#reciver mail id's 
-reciver_mail_id = [
-                    'reciver_mail_id_1@gmail.com',
-                    'reciver_mail_id_2@gmail.com',
-                    'reciver_mail_id_3@gmail.com',
+#receiver mail id's 
+destination_addresses = [
+                    'receiver_mail_id_1@gmail.com',
+                    'receiver_mail_id_2@gmail.com',
+                    'receiver_mail_id_3@gmail.com',
                     '............................',
                     '.............................',
-                    'reciver_mail_id_N number@gmail.com',
+                    'receiver_mail_id_N number@gmail.com',
                     ]
 #main subject
 subject = ('') #mail subject
-#mail contain
-mail_contain = ('') #mail contain
+#mail message
+message = ('') #mail message
 
 
 class loginCredential:
-    def login(self,gmail_id, password):
+    def login(self, gmail_id, gmail_password):
         self.gmail_id = gmail_id
-        self._password = password
+        self._password = gmail_password
 
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
@@ -40,37 +40,34 @@ class loginCredential:
         server.login(self.gmail_id, self._password) 
         return(server)
 
-class reciverCredential(loginCredential):
-    def reciver_mail(self, reciver_mail_id):
-        self.reciver_mail_id =reciver_mail_id
+class receiverCredential(loginCredential):
+    def receiver_mail(self, destination_addresses):
+        self.destination_addresses = destination_addresses
 
         mail_id = []
-        for i in reciver_mail_id:
+        for i in destination_addresses:
             mail_id.append(i)
         return(mail_id)
 
-class gmail(reciverCredential):
-     def send_mail(self, subject, mail_containt):
+class gmail(receiverCredential):
+     def send_mail(self, subject, message):
         server = self.login(self.gmail_id, self._password)
-        reciver_mail_id = self.reciver_mail(self.reciver_mail_id)
+        destination_addresses = self.receiver_mail(self.destination_addresses)
 
-        containt = (f'subject: {subject}\n\n{mail_containt}')
+        content = (f'subject: {subject}\n\n{message}')
 
         server.sendmail(
             self.gmail_id, 
-            reciver_mail_id, 
-            containt
+            destination_addresses, 
+            content
         )
-        if len(reciver_mail_id) == 1:
-            print('Mail has been sent to this : {}'.format(reciver_mail_id),'Address.')
-        else:
-            print('Mail has been sent to these : {}'.format(reciver_mail_id),'Address.')
+        print('An Email has been sent to : {}'.format(' and '.join(destination_addresses)))
         server.quit()
 
    
 
 if __name__ == '__main__':
     mail = gmail()
-    mail.login(gmail_id, password)
-    mail.reciver_mail(reciver_mail_id)
-    mail.send_mail(subject, mail_contain)
+    mail.login(gmail_id, gmail_password)
+    mail.receiver_mail(destination_addresses)
+    mail.send_mail(subject, message)
