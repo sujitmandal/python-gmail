@@ -1,16 +1,12 @@
-## python-gmail :
 [![Build Status](https://travis-ci.org/sujitmandal/python-gmail.svg?branch=master)](https://travis-ci.org/sujitmandal/python-gmail) [![GitHub license](https://img.shields.io/github/license/sujitmandal/python-gmail)](https://github.com/sujitmandal/python-gmail/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-gmail) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/python-gmail) ![PyPI](https://img.shields.io/pypi/v/python-gmail)
 
 
 [![Downloads](https://pepy.tech/badge/python-gmail)](https://pepy.tech/project/python-gmail)
 
-Automatically  Send Gmail with SMTP Server.
-
 ## Package Installation : 
 ```
 pip install python-gmail
 ```
-[Package Link](https://pypi.org/project/python-gmail/)
 ## python-gmail :
 Inorder to send mail form gmail using SMTP Server, first you need to enable "Two-Step Verification" on the sender mail id.
 
@@ -28,20 +24,20 @@ How to use the module :
 ----------------------
 
 ## E-mail login credential :
-```
+```python
 gmail_id = ('') #sender g-mail id
 
 password = ('') #sender g-mail password
 ```
 ## Single Reciver mail id :
-```
+```python
 reciver_mail_id = [
                     'reciver_mail_id_1@gmail.com'
                     ]
 ```
 
 ## Multiple Reciver mail id's :
-```
+```python
 reciver_mail_id = [
                     'reciver_mail_id_1@gmail.com',
                     'reciver_mail_id_2@gmail.com',
@@ -53,35 +49,35 @@ reciver_mail_id = [
 ```
 
 ## main subject :
-```
+```python
 subject = ('') #mail subject
 ```
 ## mail contain :
-```
+```python
 mail_contain = ('') #mail contain
 ```
 ## How to import the module :
-```
+```python
 from gmail.gmail import gmail
 ```
 ## create mail object :
-```
+```python
 mail = gmail()
 ```
 ## give sender login credential :
-```
+```python
 mail.login(gmail_id, password)
 ```
 ## give reciver mail id or id's. :
-```
+```python
 mail.reciver_mail(reciver)
 ```
 ## send mail :
-```
+```python
 mail.send_mail(subject, mail_contain)
 ```
 ## Example :
-```
+```python
 from gmail.gmail import gmail
 
 mail = gmail()
@@ -92,29 +88,6 @@ mail.reciver_mail(reciver)
 
 mail.send_mail(subject, mail_contain)
 ```
-
-## Requirement’s:
-```
-• Python 
-
-• Anaconda
-
-• Visual Studio Code
-```
-## LINK’S:
-• [Python Download](https://www.python.org/downloads/)
-
-• [Anaconda Download](https://www.anaconda.com/downloads)
-
-• [Visual Studio Download](https://code.visualstudio.com/Download)
-
-## Linux:
- How to install Anaconda In Linux | Create Environment | Install TensorFlow | Opencv library |
- [![How to install | Python | | Anaconda | | Opencv library |](https://yt-embed.herokuapp.com/embed?v=Mfbrxy8gK6A)](https://www.youtube.com/watch?v=Mfbrxy8gK6A "How to install Anaconda In Linux | Create Environment | Install TensorFlow | Opencv library |")
-
-##  Windows:
-How to install | Python | | Anaconda | | Opencv library |
- [![How to install | Python | | Anaconda | | Opencv library |](https://yt-embed.herokuapp.com/embed?v=eVV3byQlYvA)](https://www.youtube.com/watch?v=eVV3byQlYvA "How to install | Python | | Anaconda | | Opencv library |")
 
 ## License :
 MIT Licensed
