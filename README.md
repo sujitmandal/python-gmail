@@ -7,6 +7,8 @@
 ```
 pip install python-gmail
 ```
+[Package Link](https://pypi.org/project/python-gmail/)
+
 ## python-gmail :
 Inorder to send mail form gmail using SMTP Server, first you need to enable "Two-Step Verification" on the sender mail id.
 
