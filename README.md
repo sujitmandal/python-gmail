@@ -27,18 +27,18 @@ How to use the module :
 ```python
 gmail_id = ('') #sender g-mail id
 
-password = ('') #sender g-mail password
+gmail_password = ('') #sender g-mail password
 ```
-## Single Reciver mail id :
+## Single destination mail id :
 ```python
-reciver_mail_id = [
+destination_addresses = [
                     'reciver_mail_id_1@gmail.com'
                     ]
 ```
 
-## Multiple Reciver mail id's :
+## Multiple destination mail id's :
 ```python
-reciver_mail_id = [
+destination_addresses = [
                     'reciver_mail_id_1@gmail.com',
                     'reciver_mail_id_2@gmail.com',
                     'reciver_mail_id_3@gmail.com',
@@ -52,9 +52,9 @@ reciver_mail_id = [
 ```python
 subject = ('') #mail subject
 ```
-## mail contain :
+## mail message :
 ```python
-mail_contain = ('') #mail contain
+message = ('') #mail message
 ```
 ## How to import the module :
 ```python
@@ -66,15 +66,15 @@ mail = gmail()
 ```
 ## give sender login credential :
 ```python
-mail.login(gmail_id, password)
+mail.login(gmail_id, gmail_password)
 ```
 ## give reciver mail id or id's. :
 ```python
-mail.reciver_mail(reciver)
+mail.receiver_mail(destination_addresses)
 ```
 ## send mail :
 ```python
-mail.send_mail(subject, mail_contain)
+mail.send_mail(subject, message)
 ```
 ## Example :
 ```python
@@ -82,11 +82,11 @@ from gmail.gmail import gmail
 
 mail = gmail()
 
-mail.login(gmail_id, password)
+mail.login(gmail_id, gmail_password)
 
-mail.reciver_mail(reciver)
+mail.receiver_mail(destination_addresses)
 
-mail.send_mail(subject, mail_contain)
+mail.send_mail(subject, message)
 ```
 
 ## License :
