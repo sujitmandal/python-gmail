@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/sujitmandal/python-gmail.svg?branch=master)](https://travis-ci.org/sujitmandal/python-gmail) [![GitHub license](https://img.shields.io/github/license/sujitmandal/python-gmail)](https://github.com/sujitmandal/python-gmail/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-gmail) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/python-gmail) ![PyPI](https://img.shields.io/pypi/v/python-gmail)
+[![Build Status](https://travis-ci.org/sujitmandal/python-gmail.svg?branch=master)](https://travis-ci.org/sujitmandal/python-gmail) [![GitHub license](https://img.shields.io/github/license/sujitmandal/python-gmail)](https://github.com/sujitmandal/python-gmail/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-gmail) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/python-gmail) ![PyPI](https://img.shields.io/pypi/v/python-gmail) [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-gmail.svg)](https://anaconda.org/conda-forge/python-gmail) [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-gmail/badges/version.svg)](https://anaconda.org/conda-forge/python-gmail) [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-gmail/badges/installer/conda.svg)](https://conda.anaconda.org/conda-forge) [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-gmail.svg)](https://anaconda.org/conda-forge/python-gmail) [![Conda Recipe](https://img.shields.io/badge/recipe-python--gmail-green.svg)](https://anaconda.org/conda-forge/python-gmail) ![](https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-gmail-feedstock?branchName=main)
 
 
 [![Downloads](https://pepy.tech/badge/python-gmail)](https://pepy.tech/project/python-gmail)
@@ -8,6 +8,13 @@
 pip install python-gmail
 ```
 [Package Link](https://pypi.org/project/python-gmail/)
+```
+conda install -c conda-forge python-gmail
+```
+[Conda Package Link](https://anaconda.org/conda-forge/python-gmail)
+
+[python-gmail-feedstock Link](https://github.com/conda-forge/python-gmail-feedstock)
+
 
 ## python-gmail :
 Inorder to send mail form gmail using SMTP Server, first you need to enable "Two-Step Verification" on the sender mail id.
